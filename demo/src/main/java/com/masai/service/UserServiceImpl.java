@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService{
 	public User RegisterUSer(User user)throws UserException {
 		
 		Email emails=user.getEmail();
+			emails.setUser(user);
 		
 		String em1=emails.getEmail();
 		
